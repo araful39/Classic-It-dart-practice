@@ -1,16 +1,8 @@
-import 'package:flutter/foundation.dart';
+import 'package:classic_it_dart_practice/voter_check.dart';
 
 void main(){
 
-  int age=20;
-  if(age<18){
-    if (kDebugMode) {
-      print("No Voter");
-    }
-  }else{
-    if (kDebugMode) {
-      print("Voter");
-    }
-  }
+// print(VoterCheck.voterCheck());
+VoterCheck.voterCheck();
 
 }
