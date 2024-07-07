@@ -1,11 +1,13 @@
 
-
-
-
 class RList{
 
+  void searchName(String s){
+    List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
+   List searchingStudent=studentList.where((e)=> e.searchingStudent(s)).toList();
+   print(searchingStudent);
 
-  List list=['raju','sakib','nooralom','robioul'];
+  }
+
 
  // void listPrint(){
  //   print('Enter a number: ');
