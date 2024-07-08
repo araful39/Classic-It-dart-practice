@@ -1,12 +1,29 @@
 
 class RList{
-
-  void searchName(String s){
-    List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
-   List searchingStudent=studentList.where((e)=> e.searchingStudent(s)).toList();
-   print(searchingStudent);
-
-  }
+  // List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
+  // void searchName(String s){
+  //
+  //  List searchingStudent=studentList.where((e)=> e.searchingStudent(s)).toList();
+  //  print(searchingStudent);
+  //
+  // }
+}
+//
+//   List<String> days = [
+//     "Sunday",
+//     "Monday",
+//     "Tuesday",
+//     "Wednesday",
+//     "Thursday",
+//     "Friday",
+//     "Saturday"
+//   ];
+//
+//   List<String> startWithS =
+//   days.where((element) => element.startsWith("S")).toList();
+//
+//   print(startWithS);
+// }
 
 
  // void listPrint(){
@@ -73,4 +90,3 @@ class RList{
    // }
    
 
-}

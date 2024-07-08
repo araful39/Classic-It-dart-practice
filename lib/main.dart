@@ -4,9 +4,19 @@ import 'package:classic_it_dart_practice/list.dart';
 
 void main() {
 
+  List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
 
-var search= RList();
-search.searchName('s');
+
+
+   print();
+
+  }
+
+
+
+
+// var search= RList();
+// search.searchName('s');
 
 // print(VoterCheck.voterCheck());
 // VoterCheck.voterCheck();
@@ -24,22 +34,7 @@ a.listPrint();*/
   // var a = RPattern();
   // a.leftTrianglePattern(5);
 
-//   List<String> days = [
-//     "Sunday",
-//     "Monday",
-//     "Tuesday",
-//     "Wednesday",
-//     "Thursday",
-//     "Friday",
-//     "Saturday"
-//   ];
-//
-//   List<String> startWithS =
-//   days.where((element) => element.startsWith("S")).toList();
-//
-//   print(startWithS);
-// }
-//
+
 
 
 // runApp( MyApp());
@@ -53,5 +48,5 @@ a.listPrint();*/
 //     return const MaterialApp(
 //       home: Changtextwithbutton(),
 //     );
-  }
+
 
