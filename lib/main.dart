@@ -7,8 +7,8 @@ void main() {
   List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
 
 
-
-   print();
+var searchName=studentList.where((e)=>e.searchName("S".toLowerCase()).toList());
+   print(searchName);
 
   }
 
