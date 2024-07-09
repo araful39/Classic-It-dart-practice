@@ -1,52 +1,51 @@
-
-import 'package:classic_it_dart_practice/list.dart';
-
-
 void main() {
+  Map studentInformation = {};
 
-  List studentList=['raju','sakib','nooralom','robioul','Mamun','Fahim','khusi','Rimu','laboni','Nice','kakuli','bubly','apu','sunny','tamanna'];
+  studentInformation.addAll({
+    "Name": "Md.Araful islam",
+    "Roll": "24CIS50",
+    "Course": "Apps Development",
+    "Sector": "R-03,12"
+  });
+  print(studentInformation);
+  print(studentInformation.length);
+  print(studentInformation.values);
+  print(studentInformation.keys);
+  print(studentInformation.containsKey("Name"));
+  print(studentInformation.containsValue("Md.Araful islam"));
+  print(studentInformation.remove("Roll"));
+  studentInformation.addEntries([
+    MapEntry('3', 'C'),
+    MapEntry('4', 'D'),
+  ]);
+  final gasGiants = <int, String>{5: 'Jupiter', 6: 'Saturn'};
 
+  studentInformation.addEntries(gasGiants.entries);
+  print(studentInformation);
 
-var searchName=studentList.where((e)=>e.searchName("S".toLowerCase()).toList());
-   print(searchName);
+  List student = [10, 20, 20, 30, 40, 40];
 
-  }
+  final map = Map.fromIterable(student);
+  print(map);
 
+  var mapValue = studentInformation.values.toList();
+  var mapKeys = studentInformation.keys.toList();
+  print(mapValue);
+  print(mapKeys[2]);
 
-
-
-// var search= RList();
-// search.searchName('s');
-
-// print(VoterCheck.voterCheck());
-// VoterCheck.voterCheck();
-//
-// var a=Loop();
-// a.loop();
-
-/*var a=RList();
-a.listPrint();*/
-
-
-// var a= Variable();
-// a.stringCheck();
-
-  // var a = RPattern();
-  // a.leftTrianglePattern(5);
-
-
-
-
-// runApp( MyApp());
-// }
-//
-// class MyApp extends StatelessWidget {
-//   const MyApp({super.key});
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return const MaterialApp(
-//       home: Changtextwithbutton(),
-//     );
+  reverS("Wellcome");
 
 
+
+
+}
+
+reverS(String name) {
+  var list = name.split('');
+  print(list.runtimeType);
+  print(list);
+  var revers = list.reversed;
+  print(revers);
+  var joint = revers.join('');
+  print(joint);
+}
