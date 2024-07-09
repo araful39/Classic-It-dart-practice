@@ -35,8 +35,13 @@ void main() {
 
   reverS("Wellcome");
 
+  List myStudentInf = studentInformation.entries.toList();
+  print(myStudentInf);
 
+  for (var entry in myStudentInf) {
+    print("${entry.key}: ${entry.value}");
 
+  }
 
 }
 
