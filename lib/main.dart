@@ -1,56 +1,43 @@
+import 'dart:math';
+
+import 'package:flutter/foundation.dart';
+
 void main() {
-  Map studentInformation = {};
+  int siddik = 6;
+  int robiul = 3;
+  int sakib = 4;
+  int raju = 2;
+  int max = 10;
+  int min = 1;
+  Random rand = Random();
 
-  studentInformation.addAll({
-    "Name": "Md.Araful islam",
-    "Roll": "24CIS50",
-    "Course": "Apps Development",
-    "Sector": "R-03,12"
-  });
-  print(studentInformation);
-  print(studentInformation.length);
-  print(studentInformation.values);
-  print(studentInformation.keys);
-  print(studentInformation.containsKey("Name"));
-  print(studentInformation.containsValue("Md.Araful islam"));
-  print(studentInformation.remove("Roll"));
-  studentInformation.addEntries([
-    MapEntry('3', 'C'),
-    MapEntry('4', 'D'),
-  ]);
-  final gasGiants = <int, String>{5: 'Jupiter', 6: 'Saturn'};
-
-  studentInformation.addEntries(gasGiants.entries);
-  print(studentInformation);
-
-  List student = [10, 20, 20, 30, 40, 40];
-
-  final map = Map.fromIterable(student);
-  print(map);
-
-  var mapValue = studentInformation.values.toList();
-  var mapKeys = studentInformation.keys.toList();
-  print(mapValue);
-  print(mapKeys[2]);
-
-  reverS("Wellcome");
-
-  List myStudentInf = studentInformation.entries.toList();
-  print(myStudentInf);
-
-  for (var entry in myStudentInf) {
-    print("${entry.key}: ${entry.value}");
-
+  var random = rand.nextInt((max + 1) - min) + min;
+  if (kDebugMode) {
+    print("Genarate random value between $min to $max = $random");
   }
-
-}
-
-reverS(String name) {
-  var list = name.split('');
-  print(list.runtimeType);
-  print(list);
-  var revers = list.reversed;
-  print(revers);
-  var joint = revers.join('');
-  print(joint);
+  if (random == siddik) {
+    if (kDebugMode) {
+      print(
+        "Congratulation  Siddik,You are winner code$siddik ,your win 20k dollar ");
+    }
+  } else if (random == robiul) {
+    if (kDebugMode) {
+      print(
+        "Congratulation Robiul,You are winner code$robiul ,your win 20k dollar ");
+    }
+  } else if (random == sakib) {
+    if (kDebugMode) {
+      print(
+        "Congratulation Sakib,You are winner code$sakib ,your win 20k dollar ");
+    }
+  } else if (random == raju) {
+    if (kDebugMode) {
+      print(
+        "Congratulation Raju,You are winner code$raju ,your win 20k dollar ");
+    }
+  } else {
+    if (kDebugMode) {
+      print("Not match");
+    }
+  }
 }
